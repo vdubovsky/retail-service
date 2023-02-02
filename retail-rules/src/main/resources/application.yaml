@@ -1,0 +1,7 @@
+app:
+  rules:
+    source: file-system
+
+  bonus:
+    max-period-days: 90
+

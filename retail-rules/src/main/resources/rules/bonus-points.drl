@@ -1,0 +1,16 @@
+package io.vdubovsky.rules;
+import io.vdubovsky.retailapi.dto.TransactionDto;
+
+rule "amount greater than 50"
+when
+transactionDto : TransactionDto(amount > 50.00);
+then
+transactionDto.setBonusPoints(transactionDto.getBonusPoints() + transactionDto.getAmount().intValue() - 50);
+end;
+
+rule "amount greater than 100"
+when
+transactionDto : TransactionDto(amount > 100.00);
+then
+transactionDto.setBonusPoints(transactionDto.getBonusPoints() + 2 * (transactionDto.getAmount().intValue() - 100));
+end;

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.0.2</version>
+    </parent>
+    <groupId>io.vdubovsky</groupId>
+    <artifactId>retail-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>retail-parent</name>
+    <description>retail-parent</description>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>retail-rules</module>
+        <module>retail-api</module>
+    </modules>
+    <properties>
+        <java.version>17</java.version>
+        <drools.version>7.73.0.Final</drools.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.drools</groupId>
+                <artifactId>drools-engine</artifactId>
+                <version>${drools.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.drools</groupId>
+                <artifactId>drools-mvel</artifactId>
+                <version>${drools.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
