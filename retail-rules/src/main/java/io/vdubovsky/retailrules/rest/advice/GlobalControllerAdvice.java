@@ -21,7 +21,7 @@ public class GlobalControllerAdvice {
 
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler(RuntimeException.class)
-    public ErrorMessage handleBadRequestException(RuntimeException ex) {
+    public ErrorMessage handleRuntimeException(RuntimeException ex) {
         log.error(ex.getMessage(), ex);
         return new ErrorMessage().setErrorCode(HttpStatus.INTERNAL_SERVER_ERROR.value())
                 .setErrorDescription("Internal server error");
