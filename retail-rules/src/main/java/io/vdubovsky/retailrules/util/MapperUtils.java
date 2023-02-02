@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.*;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 @Component
 public class MapperUtils {
@@ -18,9 +19,13 @@ public class MapperUtils {
                 .sorted(Comparator.comparing(TransactionDto::getExecutedAt))
                 .filter(tx -> tx.getBonusPoints() > 0)
                 .forEach(tx -> reportMap.merge(tx.getUserId(), createMonthReportListForNewUser(tx),
-                        (existedList, firstList) -> updateMonthReportListForExistingUser(existedList, tx)));
+                        (existingList, firstList) -> updateMonthReportListForExistingUser(existingList, tx)));
 
-        return new TransactionBonusPointsReport().setReport(reportMap);
+        Map<UUID, Integer> totalPointsMap = reportMap.values().stream()
+                .flatMap(Collection::stream)
+                .collect(Collectors.groupingBy(MonthBonusPointsReportDto::getUserId, Collectors.summingInt(MonthBonusPointsReportDto::getBonusPoints)));
+
+        return new TransactionBonusPointsReport().setReport(reportMap).setTotalPoints(totalPointsMap);
     }
 
     private List<MonthBonusPointsReportDto> createMonthReportListForNewUser(TransactionDto tx) {

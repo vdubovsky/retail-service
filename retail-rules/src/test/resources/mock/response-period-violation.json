@@ -1,0 +1,4 @@
+{
+  "errorCode": 400,
+  "errorDescription": "period between earliest and latest transaction should not be greater than 90 days"
+}

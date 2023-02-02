@@ -29,6 +29,11 @@
             <optional>true</optional>
         </dependency>
 
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
+
         <!--Drools-->
         <dependency>
             <groupId>org.drools</groupId>

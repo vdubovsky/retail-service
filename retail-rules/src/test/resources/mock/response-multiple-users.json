@@ -1,0 +1,86 @@
+{
+  "report": {
+    "928725ef-6dfe-4c00-90d8-275866777632": [
+      {
+        "userId": "928725ef-6dfe-4c00-90d8-275866777632",
+        "month": "OCTOBER",
+        "year": 2022,
+        "bonusPoints": 50,
+        "transactions": [
+          {
+            "id": "654725ef-6dfe-4c00-90d8-275866777632",
+            "amount": 100.00,
+            "userId": "928725ef-6dfe-4c00-90d8-275866777632",
+            "executedAt": "2022-10-30T12:00:00",
+            "bonusPoints": 50
+          }
+        ]
+      },
+      {
+        "userId": "928725ef-6dfe-4c00-90d8-275866777632",
+        "month": "NOVEMBER",
+        "year": 2022,
+        "bonusPoints": 53,
+        "transactions": [
+          {
+            "id": "654725ef-6dfe-4c00-90d8-275866777632",
+            "amount": 101.01,
+            "userId": "928725ef-6dfe-4c00-90d8-275866777632",
+            "executedAt": "2022-11-30T12:00:00",
+            "bonusPoints": 53
+          }
+        ]
+      },
+      {
+        "userId": "928725ef-6dfe-4c00-90d8-275866777632",
+        "month": "JANUARY",
+        "year": 2023,
+        "bonusPoints": 50,
+        "transactions": [
+          {
+            "id": "654725ef-6dfe-4c00-90d8-275866777632",
+            "amount": 99.99,
+            "userId": "928725ef-6dfe-4c00-90d8-275866777632",
+            "executedAt": "2023-01-11T12:00:00",
+            "bonusPoints": 49
+          },
+          {
+            "id": "654725ef-6dfe-4c00-90d8-275866777632",
+            "amount": 51.03,
+            "userId": "928725ef-6dfe-4c00-90d8-275866777632",
+            "executedAt": "2023-01-12T12:00:00",
+            "bonusPoints": 1
+          }
+        ]
+      }
+    ],
+    "112325ef-6dfe-4c00-90d8-275866777632": [
+      {
+        "userId": "112325ef-6dfe-4c00-90d8-275866777632",
+        "month": "JANUARY",
+        "year": 2023,
+        "bonusPoints": 619,
+        "transactions": [
+          {
+            "id": "654725ef-6dfe-4c00-90d8-275866777632",
+            "amount": 252.99,
+            "userId": "112325ef-6dfe-4c00-90d8-275866777632",
+            "executedAt": "2023-01-11T12:00:00",
+            "bonusPoints": 506
+          },
+          {
+            "id": "654725ef-6dfe-4c00-90d8-275866777632",
+            "amount": 121.03,
+            "userId": "112325ef-6dfe-4c00-90d8-275866777632",
+            "executedAt": "2023-01-12T12:00:00",
+            "bonusPoints": 113
+          }
+        ]
+      }
+    ]
+  },
+  "totalPoints": {
+    "928725ef-6dfe-4c00-90d8-275866777632": 153,
+    "112325ef-6dfe-4c00-90d8-275866777632": 619
+  }
+}

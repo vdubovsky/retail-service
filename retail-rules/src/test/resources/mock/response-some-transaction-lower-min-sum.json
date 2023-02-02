@@ -1,0 +1,42 @@
+{
+  "report": {
+    "118725ef-6dfe-4c00-90d8-275866777632": [
+      {
+        "userId": "118725ef-6dfe-4c00-90d8-275866777632",
+        "month": "DECEMBER",
+        "year": 2022,
+        "bonusPoints": 425,
+        "transactions": [
+          {
+            "id": "654725ef-6dfe-4c00-90d8-275866777632",
+            "amount": 225.03,
+            "userId": "118725ef-6dfe-4c00-90d8-275866777632",
+            "executedAt": "2022-12-11T12:00:00",
+            "bonusPoints": 425
+          }
+        ]
+      }
+    ],
+    "928725ef-6dfe-4c00-90d8-275866777632": [
+      {
+        "userId": "928725ef-6dfe-4c00-90d8-275866777632",
+        "month": "JANUARY",
+        "year": 2023,
+        "bonusPoints": 125,
+        "transactions": [
+          {
+            "id": "654725ef-6dfe-4c00-90d8-275866777632",
+            "amount": 125.03,
+            "userId": "928725ef-6dfe-4c00-90d8-275866777632",
+            "executedAt": "2023-01-12T12:00:00",
+            "bonusPoints": 125
+          }
+        ]
+      }
+    ]
+  },
+  "totalPoints": {
+    "928725ef-6dfe-4c00-90d8-275866777632": 125,
+    "118725ef-6dfe-4c00-90d8-275866777632": 425
+  }
+}
